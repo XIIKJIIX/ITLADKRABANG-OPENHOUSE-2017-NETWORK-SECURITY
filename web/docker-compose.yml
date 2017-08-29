@@ -9,7 +9,7 @@ services:
       - "9001:2015"
     volumes:
       - "./Caddyfile:/etc/Caddyfile"
-      - "./cmd-inj:/srv"
+      - "./cmd-inj:/srv:ro"
   alert:
     image: abiosoft/caddy:php
     restart: always
