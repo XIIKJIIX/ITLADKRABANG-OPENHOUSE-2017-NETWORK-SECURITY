@@ -1,0 +1,5 @@
+0.0.0.0:2015
+tls off
+root .
+fastcgi / 127.0.0.1:9000 php
+startup php-fpm7

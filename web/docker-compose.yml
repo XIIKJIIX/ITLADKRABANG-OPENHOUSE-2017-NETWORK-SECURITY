@@ -1,0 +1,39 @@
+version: "2"
+
+services:
+  cmd-inj:
+    image: abiosoft/caddy:php
+    restart: always
+    container_name: cmd-inj
+    ports:
+      - "9001:2015"
+    volumes:
+      - "./Caddyfile:/etc/Caddyfile"
+      - "./cmd-inj:/srv"
+  alert:
+    image: abiosoft/caddy:php
+    restart: always
+    container_name: alert
+    ports:
+      - "9002:2015"
+    volumes:
+      - "./Caddyfile:/etc/Caddyfile"
+      - "./alert:/srv"
+  redirect:
+    image: abiosoft/caddy:php
+    restart: always
+    container_name: redirect
+    ports:
+      - "9003:2015"
+    volumes:
+      - "./Caddyfile:/etc/Caddyfile"
+      - "./redirect:/srv"
+  robots:
+    image: abiosoft/caddy:php
+    restart: always
+    container_name: robots
+    ports:
+      - "9004:2015"
+    volumes:
+      - "./Caddyfile:/etc/Caddyfile"
+      - "./robots:/srv"
