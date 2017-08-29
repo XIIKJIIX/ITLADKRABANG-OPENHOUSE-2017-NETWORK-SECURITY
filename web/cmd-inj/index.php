@@ -19,7 +19,7 @@
             <div class="home route-content">
                 <div class="home__wrapper page-container">
                     <div class="home__column">
-                        <h1 class="home__title">Welcome to our<br>Pinger!!</h1>
+                        <h1 class="home__title">Welcome to our<br>Domain Looker!!</h1>
                         <div class="request-form__form">
                             <form class="request-form form" action="index.php" method="post">
                                 <div class="signin-email underline">
@@ -29,13 +29,18 @@
                                 <?php
                                     if (isset($_POST['host'])) {
                                         $host = $_POST['host'];
-                                        echo '<div class="form__row">'
-                                        .shell_exec('ping -c 2 '.$host)
-                                        .'</div>';
+                                        $res = shell_exec('nslookup '.$host);
+                                        if (!empty($res)) {
+                                            echo '<div class="form__row">'
+                                            .'<pre>'
+                                            .$res
+                                            .'</pre>'
+                                            .'</div>';
+                                        }
                                     }
                                 ?>
                                 <div class="form__row">
-                                    <button type="submit" class="button button-bg-white">Ping!!</button>
+                                    <button type="submit" class="button button-bg-white">Look!!</button>
                                 </div>
                             </form>
                         </div>
