@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web101:
+    image: oph2017base
+    ports:
+      - "8888:80"
+    volumes:
+      - "./web101/src:/data/public"
+  web102:
+    image: oph2017base
+    ports:
+      - "8889:80"
+    volumes:
+      - "./web102/src:/data/public"

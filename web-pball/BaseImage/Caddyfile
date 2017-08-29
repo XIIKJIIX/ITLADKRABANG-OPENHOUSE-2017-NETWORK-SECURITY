@@ -1,0 +1,14 @@
+0.0.0.0:80
+
+fastcgi / localhost:9000 php {
+    root /data/public
+}
+
+rewrite {
+    to {path} {path}/ /index.php?url={uri}
+}
+
+startup php-fpm -D
+
+log stdout
+errors stdout
