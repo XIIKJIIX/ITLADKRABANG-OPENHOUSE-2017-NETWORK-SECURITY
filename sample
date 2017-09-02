@@ -1,0 +1,7 @@
+The answer is in `Flag{}` or `{flag:}` or `{}`
+
+Example:
+
+`Flag{I<3KMITL}` or `{flag:I<3KMITL}` or `{I<3KMITL}` or `Flag ${I<3KMITL}`
+
+The Answer is `I<3KMITL`
