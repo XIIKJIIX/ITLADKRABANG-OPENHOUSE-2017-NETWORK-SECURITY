@@ -11,6 +11,9 @@ Network Security เป็นการแข่งขันซึ่งอยู
 	- รางวัลรองชนะเลิศ เงินรางวัล 2,000 บาท พร้อมโควต้าศึกษาต่อระดับปริญญาตรี คณะเทคโนโลยีสารสนเทศ สจล.
 	- รางวัลชมเชย ได้รับของที่ระลึกพร้อมเกียรติบัตร
 
+ลิงค์เฉลยโจทย์
+[เฉลย NETWORK SECURITY : IT@KMITL OPENHOUSE](https://medium.com/@gunnputtimate/%E0%B9%80%E0%B8%89%E0%B8%A5%E0%B8%A2-network-security-it-kmitl-openhouse-c4e21a4b672b)
+
 ## Developers
 - วีรภัทร ทรัพย์สมบูรณ์ ([xiikjiix](https://fb.com/IIIKJIII))
 - กฤษฎา อิงอาน ([theballkyo](https://www.facebook.com/Theballkyo))
